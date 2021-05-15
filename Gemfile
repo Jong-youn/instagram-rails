@@ -7,8 +7,12 @@ ruby '2.6.2'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
 # Database
 gem 'pg'
+# Bootstrap
+gem 'bootstrap', '~> 4.1.1'
+gem 'jquery-rails'
+gem 'font-awesome-rails'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+# gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
