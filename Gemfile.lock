@@ -58,9 +58,9 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    bcrypt (3.1.16)
     autoprefixer-rails (10.2.5.0)
       execjs (< 2.8.0)
+    bcrypt (3.1.16)
     bindex (0.8.1)
     bootsnap (1.7.5)
       msgpack (~> 1.0)
@@ -246,6 +246,7 @@ DEPENDENCIES
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
+  sprockets (~> 4.0)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)
