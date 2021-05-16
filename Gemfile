@@ -7,6 +7,7 @@ ruby '2.6.2'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
 # Database
 gem 'pg'
+gem 'devise'
 # Bootstrap
 gem 'bootstrap', '~> 4.1.1'
 gem 'jquery-rails'
