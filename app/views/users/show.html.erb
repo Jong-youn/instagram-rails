@@ -2,7 +2,7 @@
   <div class="profile row">
     <div class="col-md-4 avatar">
       <div class="wrapper">
-        <img src="https://instuigram-avatar.jpg">
+        <img src="/profile3.jpeg">
       </div>
     </div>
     
@@ -14,7 +14,7 @@
         </a>
       </div>
       <ul class="posts">
-        <li><span>12</span> posts</li>
+        <li><span><%= @posts.count %></span> posts</li>
         <li><span>195</span> followers</li>
         <li><span>345</span> following</li>
       </ul>
@@ -44,13 +44,9 @@
 </div>
 
 <div class="user-images">
-  <div class="wrapper">
-    <img src="/Users/jongyounlee/developer/instagram/app/assets/images/zoom1.jpeg">
-  </div>
-  <div class="wrapper">
-    <img src="../../assets/images/zoom2.jpeg">
-  </div>
-  <div class="wrapper">
-    <img src="../../assets/images/zoom3.jpeg">
-  </div>
+  <% @posts.each do |post|%>
+    <div class="wrapper">
+      <%=image_tag post.image %>
+    </div>
+  <% end %>
 </div>

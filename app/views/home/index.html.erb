@@ -1,1 +1,12 @@
-<h1>home page</h1>
+<div class="homepage">
+  <div class='form-upload'>
+    <%= render "upload_form" %>
+  </div>
+  <div class="posts">
+    <% @posts.each do |post| %>
+      <section class='post'>
+        <%= render partial: "show_posts", locals: {post: post} %>
+      </section>
+    <% end %>
+  </div>
+</div>
